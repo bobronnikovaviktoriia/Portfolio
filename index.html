@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viktoriia Bobronnikova | Frontend Developer Portfolio</title>
+  <meta name="description" content="Viktoriia Bobronnikova is a Frontend Developer specializing in HTML, CSS, and JavaScript. Explore projects, skills, and ways to get in touch." />
+
+  <!-- Open Graph placeholder tags -->
+  <meta property="og:title" content="Viktoriia Bobronnikova | Frontend Developer" />
+  <meta property="og:description" content="Frontend Developer building clean, accessible, responsive web experiences with HTML, CSS, and JavaScript." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-preview.jpg" />
+  <meta property="og:url" content="https://example.com" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="#home" class="logo" aria-label="Viktoriia Bobronnikova, go to top">
+        <span class="logo-mark">VB</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66 4.93 19.07M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+          </svg>
+        </button>
+
+        <button id="menu-toggle" class="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blur-circle circle-1"></div>
+        <div class="blur-circle circle-2"></div>
+        <div class="grid-pattern"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge">
+            <span class="badge-dot"></span>
+            Available for opportunities
+          </span>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Viktoriia Bobronnikova</span>
+          </h1>
+
+          <p class="hero-role">
+            <span id="typing-text" aria-hidden="true"></span>
+            <span class="cursor" aria-hidden="true">|</span>
+            <span class="sr-only" id="typing-sr">Frontend Developer</span>
+          </p>
+
+          <p class="hero-desc">
+            I build clean, accessible, and responsive web interfaces using HTML, CSS, and JavaScript.
+            I've been drawn to technology since childhood, and I'm currently studying Information
+            Technology at Edmonds College while looking for internship and junior frontend developer
+            opportunities where I can keep growing.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/vbobronnikova" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit GitHub profile (opens in a new tab)">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.96 3.22 9.16 7.68 10.65.56.1.77-.24.77-.54 0-.27-.01-1.16-.02-2.1-3.12.68-3.78-1.34-3.78-1.34-.51-1.3-1.25-1.64-1.25-1.64-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.49-.28-5.11-1.25-5.11-5.56 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.42.11-2.96 0 0 .95-.3 3.11 1.16a10.8 10.8 0 0 1 5.66 0c2.16-1.46 3.11-1.16 3.11-1.16.61 1.54.23 2.68.11 2.96.72.79 1.16 1.79 1.16 3.02 0 4.32-2.63 5.28-5.13 5.56.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.65.78.54A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/viktoriia-bobronnikova" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Visit LinkedIn profile (opens in a new tab)">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.28 2.38 4.28 5.48v6.26ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-frame">
+            <div class="avatar-placeholder" role="img" aria-label="Portrait placeholder for Viktoriia Bobronnikova">
+              <span>VB</span>
+            </div>
+            <div class="orbit-tag tag-1">HTML5</div>
+            <div class="orbit-tag tag-2">CSS3</div>
+            <div class="orbit-tag tag-3">JS</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow">About Me</p>
+        <h2 class="section-title">Getting to know me</h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I've been passionate about technology and computers from an early age. At 10, I enrolled
+              at IT Step Academy in Mariupol (Ukraine), where I studied from 2018 to 2023 — learning the fundamentals
+              of programming, web design, 3D modeling, robotics, and graphic design, and building my first
+              simple websites and games.
+            </p>
+            <p>
+              After completing the academy, I kept learning on my own between the ages of 14 and 16, through
+              online courses, tutorials, and personal projects. I explored frontend development, game design,
+              digital art and animation, and mobile app development with augmented reality, and I gained
+              hands-on experience with microcontrollers like Arduino and BBC micro:bit.
+            </p>
+            <p>
+              In 2025 I enrolled at Edmonds College in the United States to pursue a professional education
+              in Information Technology. I'm especially interested in software development, UI/UX design,
+              and building digital products that make life easier for people — along with a growing interest
+              in cybersecurity and 3D environments. My goal is to join a team where I can help build modern,
+              user-friendly, and impactful digital solutions.
+            </p>
+            <div class="about-actions" aria-label="Resume and diploma links">
+              <a href="resume-viktoriia-bobronnikova.pdf" class="btn btn-primary" download="Viktoriia-Bobronnikova-Resume.pdf">
+                Download Resume
+              </a>
+              <a href="it-step-academy-diploma.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                View IT STEP Diploma
+              </a>
+            </div>
+          </div>
+
+          <div class="about-cards reveal">
+            <div class="info-card">
+              <span class="info-icon" aria-hidden="true">📍</span>
+              <div>
+                <p class="info-label">Location</p>
+                <p class="info-value">Seattle, WA</p>
+              </div>
+            </div>
+            <div class="info-card info-card--education">
+              <span class="info-icon" aria-hidden="true">🎓</span>
+              <div class="info-card-content">
+                <p class="info-label">Education</p>
+                <p class="info-value">Edmonds College</p>
+                <p class="info-subvalue">Web Application &amp; Cloud Developer</p>
+                <p class="education-divider" aria-hidden="true"></p>
+                <p class="info-value">IT STEP Academy, Mariupol</p>
+                <p class="info-subvalue">Computer Technology Program · 2018–2023</p>
+                <a href="it-step-academy-diploma.pdf" class="education-link" target="_blank" rel="noopener noreferrer">
+                  View diploma <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon" aria-hidden="true">🧩</span>
+              <div>
+                <p class="info-label">Experience</p>
+                <p class="info-value">Junior frontend developer</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon" aria-hidden="true">🗣️</span>
+              <div>
+                <p class="info-label">Languages</p>
+                <p class="info-value">English, Russian, Ukrainian</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="eyebrow">Skills</p>
+        <h2 class="section-title">What I work with</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">Frontend</h3>
+            <ul class="skill-badges">
+              <li class="skill-badge">HTML5</li>
+              <li class="skill-badge">CSS3</li>
+              <li class="skill-badge">JavaScript</li>
+              <li class="skill-badge">Responsive Design</li>
+              <li class="skill-badge">Accessibility</li>
+              <li class="skill-badge">CSS Grid</li>
+              <li class="skill-badge">Flexbox</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">Development Tools</h3>
+            <ul class="skill-badges">
+              <li class="skill-badge">Git</li>
+              <li class="skill-badge">GitHub</li>
+              <li class="skill-badge">Visual Studio Code</li>
+              <li class="skill-badge">Chrome DevTools</li>
+              <li class="skill-badge">Figma</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">Additional Knowledge</h3>
+            <ul class="skill-badges">
+              <li class="skill-badge">REST APIs</li>
+              <li class="skill-badge">JSON</li>
+              <li class="skill-badge">Local Storage</li>
+              <li class="skill-badge">Form Validation</li>
+              <li class="skill-badge">Geolocation API</li>
+              <li class="skill-badge">Basic SEO</li>
+              <li class="skill-badge">UI/UX Design</li>
+              <li class="skill-badge">Cybersecurity Basics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h2 class="section-title">Things I've built</h2>
+
+        <div class="filter-bar" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="html-css" type="button">HTML &amp; CSS</button>
+          <button class="filter-btn" data-filter="javascript" type="button">JavaScript</button>
+          <button class="filter-btn" data-filter="responsive" type="button">Responsive Design</button>
+          <button class="filter-btn" data-filter="api" type="button">API Projects</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal" data-category="html-css responsive javascript">
+            <div class="project-image">
+              <div class="project-placeholder" aria-hidden="true">🌿 Serenity Massage</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Serenity Massage Center</h3>
+              <p class="project-desc">A responsive business website for a massage center with service information, an image gallery, and an appointment booking system.</p>
+              <ul class="tag-list">
+                <li class="tag">HTML5</li>
+                <li class="tag">CSS3</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://bobronnikovaviktoriia.github.io/Massage-Center/#home" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/bobronnikovaviktoriia/Massage-Center" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                <button class="btn btn-sm btn-ghost" type="button" data-modal-trigger="0">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal" data-category="html-css responsive javascript">
+            <div class="project-image">
+              <div class="project-placeholder" aria-hidden="true">🐶 Paws &amp; Groom</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Paws &amp; Groom Pet Salon</h3>
+              <p class="project-desc">A responsive pet grooming salon website with service listings, a photo gallery, a contact form, and online appointment booking.</p>
+              <ul class="tag-list">
+                <li class="tag">HTML5</li>
+                <li class="tag">CSS3</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://bobronnikovaviktoriia.github.io/Paws-Style-Dog-Grooming-Salon-Site/index.html" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/bobronnikovaviktoriia/Paws-Style-Dog-Grooming-Salon-Site" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                <button class="btn btn-sm btn-ghost" type="button" data-modal-trigger="1">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" data-category="javascript api">
+            <div class="project-image">
+              <div class="project-placeholder" aria-hidden="true">🌦️ Weather App</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Weather App</h3>
+              <p class="project-desc">A weather application that displays real-time conditions for any city using a public weather API, Fetch, and async/await.</p>
+              <ul class="tag-list">
+                <li class="tag">JavaScript</li>
+                <li class="tag">REST API</li>
+                <li class="tag">Async/Await</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://bobronnikovaviktoriia.github.io/Weather-App/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/bobronnikovaviktoriia/Weather-App" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                <button class="btn btn-sm btn-ghost" type="button" data-modal-trigger="2">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal" data-category="javascript api responsive">
+            <div class="project-image">
+              <div class="project-placeholder" aria-hidden="true">📍 LocalVibe</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">LocalVibe</h3>
+              <p class="project-desc">A responsive location discovery app that helps users find nearby cafés, restaurants, parks, and entertainment venues, with real-time search, filtering, and favorites.</p>
+              <ul class="tag-list">
+                <li class="tag">React</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">REST API</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://local-vibe-liart.vercel.app/" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/bobronnikovaviktoriia/local-vibe" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                <button class="btn btn-sm btn-ghost" type="button" data-modal-trigger="3">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal" data-category="html-css responsive javascript">
+            <div class="project-image">
+              <div class="project-placeholder" aria-hidden="true">🍝 Bella Italia</div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Bella Italia Restaurant</h3>
+              <p class="project-desc">A responsive restaurant website with a filterable menu, a lightbox gallery, customer reviews, Google Maps, and table reservations.</p>
+              <ul class="tag-list">
+                <li class="tag">HTML5</li>
+                <li class="tag">CSS3</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+              <div class="project-actions">
+                <a href="https://bobronnikovaviktoriia.github.io/bella-italia/#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                <a href="https://github.com/bobronnikovaviktoriia/bella-italia" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                <button class="btn btn-sm btn-ghost" type="button" data-modal-trigger="4">View Details</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="no-results" id="no-results" hidden>No projects match this filter yet.</p>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section-title">Let's work together</h2>
+
+        <div class="contact-grid contact-grid--centered">
+          <div class="contact-info reveal">
+            <p class="contact-invite">
+              I'm actively looking for internship and junior frontend developer roles.
+              Feel free to reach out — I'd love to hear about your team or project.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon" aria-hidden="true">✉️</span>
+                <a href="mailto:viktoriiabobronnikova@gmail.com">viktoriiabobronnikova@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">🐙</span>
+                <a href="https://github.com/bobronnikovaviktoriia" target="_blank" rel="noopener noreferrer">https://github.com/bobronnikovaviktoriia</a>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">💼</span>
+                <a href="https://www.linkedin.com/in/viktoriia-bobronnikova-9ab415386/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/viktoriia-bobronnikova-9ab415386/</a>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">📍</span>
+                <span>Seattle, WA — open to remote</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== PROJECT MODAL ===================== -->
+  <div class="modal-overlay" id="modal-overlay" hidden>
+    <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close project details">&times;</button>
+
+      <div class="modal-image" id="modal-image" aria-hidden="true"></div>
+
+      <div class="modal-body">
+        <h3 class="modal-title" id="modal-title"></h3>
+        <p class="modal-description" id="modal-description"></p>
+
+        <h4>Problem it solves</h4>
+        <p id="modal-problem"></p>
+
+        <h4>Main features</h4>
+        <ul id="modal-features"></ul>
+
+        <h4>Development challenges</h4>
+        <p id="modal-challenges"></p>
+
+        <h4>Lessons learned</h4>
+        <p id="modal-lessons"></p>
+
+        <h4>Technologies used</h4>
+        <ul class="tag-list" id="modal-tech"></ul>
+
+        <div class="modal-actions">
+          <a href="#" class="btn btn-primary" id="modal-demo-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          <a href="#" class="btn btn-outline" id="modal-github-link" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="logo-mark">VB</span>
+        <p>Viktoriia Bobronnikova — Frontend Developer</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-socials">
+        <a href="https://github.com/bobronnikovaviktoriia" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)">GitHub</a>
+        <a href="https://www.linkedin.com/in/viktoriia-bobronnikova-9ab415386/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">LinkedIn</a>
+        <a href="mailto:viktoriiabobronnikova@gmail.com">Email</a>
+      </div>
+    </div>
+
+    <p class="footer-copy">© <span id="current-year"></span> Viktoriia Bobronnikova. All rights reserved.</p>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
