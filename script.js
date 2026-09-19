@@ -314,8 +314,41 @@ function initProjectModal() {
       challenges: 'Building a smooth lightbox and filtering system in vanilla JavaScript without relying on any external libraries.',
       lessons: 'Improved my skills in DOM manipulation, event delegation, and integrating third-party embeds like Google Maps.',
       tech: ['HTML5', 'CSS3', 'JavaScript'],
-      demoUrl: 'https://bobronnikovaviktoriia.github.io/bella-italia/#',
+            demoUrl: 'https://bobronnikovaviktoriia.github.io/bella-italia/#',
       githubUrl: 'https://github.com/bobronnikovaviktoriia/bella-italia',
+    },
+
+    {
+      title: 'Smart Travel',
+      description: 'A full-stack travel planning platform that brings destinations, multi-day Trip Packs, hotels, activities, restaurants, and practical travel information into one place.',
+
+      problem: 'Planning a trip often requires using multiple websites for destinations, hotels, activities, restaurants, and itineraries. Smart Travel brings these essential parts of travel planning together in one organized platform.',
+
+      features: [
+        'Destination and city travel guides',
+        'Multi-day Trip Packs with day-by-day itineraries',
+        'Hotels, restaurants, and activities',
+        'Admin system for managing travel content',
+        'Dynamic content powered by a Supabase database',
+        'Affiliate-link tracking and analytics',
+        'Responsive design for desktop and mobile',
+        'SEO-focused content structure'
+      ],
+
+      challenges: 'Designing a scalable database and content management system that connects destinations, cities, hotels, restaurants, activities, and complete itineraries while keeping the user experience simple and responsive.',
+
+      lessons: 'Gained hands-on experience building a complete web product with Next.js and Supabase, including database architecture, dynamic content, admin tools, deployment, responsive UX, SEO, analytics, and affiliate-link integration.',
+
+      tech: [
+        'Next.js',
+        'Supabase',
+        'JavaScript',
+        'Database',
+        'Responsive Design'
+      ],
+
+      demoUrl: 'https://smart--travel.vercel.app/',
+      githubUrl: '',
     },
   ];
 
